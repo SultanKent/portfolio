@@ -1,0 +1,122 @@
+.Footer {
+    padding: 76px 0px 0px;
+}
+
+.Footer_main {
+    padding: 0px 175px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.Footer_main1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Footer_main1>h2 {
+    color: #591567;
+    font-size: 34px;
+}
+
+.Footer_main1>p {
+    color: #857885;
+}
+
+.messengers {
+    display: flex;
+    gap: 5px;
+}
+
+.messengers>a>img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.Download {
+    width: 140px;
+    background: #FFBC51;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.Footer_main2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Footer_main2>input:nth-child(1), .Footer_main2>input:nth-child(2) {
+    width: 502px;
+    height: 30px;
+    outline: none;
+}
+
+.Footer_main2>textarea {
+    height: 90px;
+    outline: none;
+}
+
+.Submit {
+    width: 120px;
+    background: #FFBC51;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.Footer_down {
+    border: 1px solid black;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    padding: 20px;
+}
+
+.last_words {
+    display: flex;
+    justify-content: center;
+    color: #857885;
+}
+
+@media only screen and (max-width: 1250px) {
+    .Footer_main {
+        padding: 0px 50px;
+    }
+    .Footer_main2>input:nth-child(1), .Footer_main2>input:nth-child(2) {
+        width: 402px;
+        height: 30px;
+    }    
+    .Footer_main2>textarea {
+        width: 402px;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .Footer_main2>input:nth-child(1), .Footer_main2>input:nth-child(2) {
+        width: 252px;
+    }    
+    .Footer_main2>textarea {
+        width: 252px;
+        height: 60px;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .Footer {
+        padding: 0px;
+    }
+    .Footer_main {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .Footer_main1 {
+        align-items: center;
+    }
+}

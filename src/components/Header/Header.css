@@ -1,0 +1,50 @@
+.Header {
+    background: url(../../assets/Header.png) no-repeat;
+    background-size: cover;
+    height: 771px;
+}
+
+.Header_main {
+    padding: 33px 168px;
+}
+
+.Header_title {
+    padding: 160px 0px;
+}
+
+.Header_title>h1 {
+    font-size: 54px;
+    margin-bottom: 20px;
+}
+
+.Header_title>h1>span {
+    color: #8A2BE2;
+}
+
+.Header_title>p {
+    width: 450px;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.header_btn {
+    width: 200px;
+    height: 50px;
+    background: #798AC9;
+    border-radius: 20px;
+}
+
+@media only screen and (max-width: 1250px) {
+    .Header_main {
+        padding: 33px 50px;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .Header_title>h1 {
+        font-size: 44px;
+    }
+    .Header_title>p {
+        width: 300px;
+    }
+}
