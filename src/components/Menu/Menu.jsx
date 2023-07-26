@@ -72,7 +72,7 @@ const Menu = () => {
             </nav>
         ): 
         openMenu ? (
-          <div className='Menu-overlay' onClick={openAndCloseMenu}>
+            <div className="Menu-overlay" onClick={openAndCloseMenu}>
             <img src={closeIcon} alt="closeIcon" onClick={openAndCloseMenu} className="close"/>
             <div className="my-social-messengers">
               {social_messengers.map((item) => (
@@ -110,7 +110,7 @@ const Menu = () => {
          <img src={Hamb} alt="Hamb" onClick={openAndCloseMenu} className="Hamb"/>
         )
         }
-      </div>
+        </div>
     </div>
   )
 }

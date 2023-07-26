@@ -80,6 +80,15 @@
     transform: scale(1.1);
 }
 
+.show-projects {
+    width: 100px;
+    color: #E23434;
+    height: 40px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    background: transparent;
+}
+
 .Github {
     color: gray;
 }
