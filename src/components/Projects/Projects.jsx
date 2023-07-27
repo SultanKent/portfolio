@@ -149,7 +149,7 @@ const Projects = () => {
             )}
             <button onClick={() => setShowProjects(true)}
             ref={showButton}
-            className="show-projects">More Projects</button>
+            className="show-projects">Show More</button>
             <p className='Github'>More in my <a href='https://github.com/SultanKent'
             target="_blank">Github</a></p>
         </div>
