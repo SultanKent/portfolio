@@ -81,22 +81,22 @@ const Menu = () => {
         <ul className='Menu-content'>
         <nav className="navbar2">
              <li>
-               <Link to="About" smooth={true} duration={500}>
+               <Link to="About" smooth={true} duration={500} onClick={handleToggle}>
                  About
                </Link>
              </li>
              <li>
-               <Link to="Skills" smooth={true} duration={500}>
+               <Link to="Skills" smooth={true} duration={500} onClick={handleToggle}>
                  Skills
                </Link>
              </li>
              <li>
-               <Link to="Projects" smooth={true} duration={500}>
+               <Link to="Projects" smooth={true} duration={500} onClick={handleToggle}>
                  Projects
                </Link>
              </li>
              <li>
-               <Link to="Footer" smooth={true} duration={500}>
+               <Link to="Footer" smooth={true} duration={500} onClick={handleToggle}>
                  Contacts
                </Link>
              </li>
