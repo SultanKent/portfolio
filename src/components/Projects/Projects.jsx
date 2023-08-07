@@ -46,17 +46,17 @@ const Projects = () => {
                     <img src={Project2} alt="Project2" />
                 </div>
                 <div className="Project1_main">
-                <p>Party Station</p>
-                <h2>The Best<br/><span> Games in the World</span></h2>
-                <p>that website is for people who is going to buy online game with discount but don't know where to buy</p>
+                <p>Books</p>
+                <h2>Library<br/><span>Books App</span></h2>
+                <p>if you don't know where can i find good books, you should try this website</p>
                 <div className='tech'>
-                <span>React</span>
-                <span>Jsx</span>
+                <span>Redux</span>
+                <span>Api</span>
                 </div>
                 <div className="Link">
-                <button className='source_code'>Code <a href='https://github.com/SultanKent/website' target="_blank"
+                <button className='source_code'>Code <a href='https://github.com/SultanKent/books-app' target="_blank"
                 ><img src={Github} alt="Github_logo" /></a></button>
-                <button className='source_code'>Live Demo <a href='https://sultankent.github.io/website/' target="_blank"
+                <button className='source_code'>Live Demo <a href='https://sultankent.github.io/books-app/' target="_blank"
                 ><img src={Link_icon} alt="Link_icon" /></a></button>
                 </div>
                 </div>
@@ -64,26 +64,27 @@ const Projects = () => {
 
             <div className="Project1">
                 <div className="Project1_main">
-                <p>Music</p>
-                <h2>Musik Concert<br/><span> Landing Page</span></h2>
-                <p>that website is for people who is going to buy online game with discount but don't know where to buy</p>
+                <p>Player</p>
+                <h2>Spotify 2.0<br/><span> Music Player</span></h2>
+                <p>website is about listening to the music from spotify, if you have spotify account you should visit this website</p>
                 <div className='tech'>
                 <span>React</span>
-                <span>Jsx</span>
+                <span>Api</span>
                 </div>
                 <div className="Link">
-                <button className='source_code'>Code <a href='https://github.com/SultanKent/project-new' target="_blank"
+                <button className='source_code'>Code <a href='https://github.com/SultanKent/music-player' target="_blank"
                 ><img src={Github} alt="Github_logo" /></a></button>
-                <button className='source_code'>Live Demo <a href='https://sultankent.github.io/project-new/' target="_blank"
-                ><img src={Link_icon} alt="Link_icon" /></a></button>
+                <button className='source_code'>Live Demo <a href='https://sultankent.github.io/music-player/' target="_blank"><img src={Link_icon} alt="Link_icon" /></a></button>
                 </div>
                 </div>
                 <div className="Project1_img">
-                    <img src={Project3} alt="Project1" />
+                    <img src={Project3} alt="Project3" />
                 </div>
             </div>
+
             {showProjects && (
                 <>
+            
             <div className="Project1">
                 <div className="Project1_img">
                     <img src={Project4} alt="Project4" />
@@ -105,27 +106,27 @@ const Projects = () => {
                 </div>
             </div>
 
-
             <div className="Project1">
                 <div className="Project1_main">
-                <p>Player</p>
-                <h2>Spotify<br/><span> Music Player</span></h2>
-                <p>website is about listening to the music from spotify, if you have spotify account you should visit this website</p>
+                <p>Party Station</p>
+                <h2>The Best<br/><span> Games in the World</span></h2>
+                <p>that website is for people who is going to buy online game with discount but don't know where to buy</p>
                 <div className='tech'>
                 <span>React</span>
-                <span>Api</span>
+                <span>Jsx</span>
                 </div>
                 <div className="Link">
-                <button className='source_code'>Code <a href='https://github.com/SultanKent/music-player' target="_blank"
+                <button className='source_code'>Code <a href='https://github.com/SultanKent/website' target="_blank"
                 ><img src={Github} alt="Github_logo" /></a></button>
-                <button className='source_code'>Live Demo <a href='https://sultankent.github.io/music-player/' target="_blank"><img src={Link_icon} alt="Link_icon" /></a></button>
+                <button className='source_code'>Live Demo <a href='https://sultankent.github.io/website/' target="_blank"
+                ><img src={Link_icon} alt="Link_icon" /></a></button>
                 </div>
                 </div>
                 <div className="Project1_img">
                     <img src={Project5} alt="Project5" />
                 </div>
             </div>
-            
+
             <div className="Project1">
                 <div className="Project1_img">
                     <img src={Project6} alt="Project6" />
