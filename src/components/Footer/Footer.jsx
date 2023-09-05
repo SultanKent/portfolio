@@ -6,6 +6,13 @@ import In from '../../assets/in.png'
 import github from '../../assets/github.png'
 
 const Footer = () => {
+    const handleDownloadClick = () => {
+        const fileUrl = '/Expert.pdf'; 
+        const a = document.createElement('a');
+        a.href = fileUrl;
+        a.download = 'резюме'; 
+        a.click();
+      }
   const social_messengers = [
     {
         id: 1,
@@ -20,7 +27,7 @@ const Footer = () => {
     {
         id: 3,
         imageSrc: In,
-        link: 'https://kz.linkedin.com/in/sultan-kuanishev-74bb84278'
+        link: 'https://kz.linkedin.com/in/sultan-kuanishev-864373282'
     },
     {
         id: 4,
@@ -41,7 +48,7 @@ const Footer = () => {
                         </a>
                     ))}
                 </div>
-                <button className='Download'>Download CV</button>
+                <button className='Download' onClick={handleDownloadClick}>Download CV</button>
             </div>
             <div className="Footer_main2">
                 <input type="text" placeholder='Your Name'/>

@@ -34,6 +34,10 @@
     border-radius: 20px;
 }
 
+.header_btn>a {
+    color: white;
+}
+
 @media only screen and (max-width: 1250px) {
     .Header_main {
         padding: 33px 50px;
