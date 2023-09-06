@@ -7,7 +7,7 @@ import github from '../../assets/github.png'
 
 const Footer = () => {
     const handleDownloadClick = () => {
-        const fileUrl = '/Expert.pdf'; 
+        const fileUrl = '/cv.pdf'; 
         const a = document.createElement('a');
         a.href = fileUrl;
         a.download = 'резюме'; 

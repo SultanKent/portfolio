@@ -21,7 +21,7 @@ const Menu = () => {
         {
           id: 3,
           imageSrc: In,
-          link: 'https://kz.linkedin.com/in/sultan-kuanishev-74bb84278'
+          link: 'https://kz.linkedin.com/in/sultan-kuanishev-864373282'
         },
         {
           id: 4,

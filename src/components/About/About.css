@@ -120,3 +120,14 @@
         width: 300px;
     }
 }
+
+@media only screen and (max-width: 420px) {
+    .About_img::before {
+        width: 200px;
+        height: 180px;
+    }
+    .MyArt {
+        width: 200px;
+        height: 180px;
+    }
+}
