@@ -90,17 +90,17 @@ const Projects = () => {
                     <img src={Project4} alt="Project4" />
                 </div>
                 <div className="Project1_main">
-                <p>Dino Quiz</p>
-                <h2>Chrome Dino<br/><span> but with questions</span></h2>
-                <p>in this game you can play chrome dino game but with some changes like questions, if you lose you must answer to the question about js</p>
+                <p>Coffee page</p>
+                <h2>Coffee house<br/><span> with json</span></h2>
+                <p>the page where you can buy everything fot your coffee and enjoy</p>
                 <div className='tech'>
-                <span>Html</span>
-                <span>Js</span>
+                <span>React</span>
+                <span>Express</span>
                 </div>
                 <div className="Link">
-                <button className='source_code'>Code <a href='https://github.com/SultanKent/Game_quiz' target="_blank"
+                <button className='source_code'>Code <a href='https://github.com/SultanKent/diplom-react' target="_blank"
                 ><img src={Github} alt="Github_logo" /></a></button>
-                <button className='source_code'>Live Demo <a href='https://sultankent.github.io/Game_quiz/' target="_blank"
+                <button className='source_code'>Live Demo <a href='https://sultankent.github.io/diplom-react/' target="_blank"
                 ><img src={Link_icon} alt="Link_icon" /></a></button>
                 </div>
                 </div>
