@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.fc106d53.css",
-    "main.js": "/portfolio/static/js/main.c585fce2.js",
+    "main.js": "/portfolio/static/js/main.6a803300.js",
     "static/media/MyArt.jpg": "/portfolio/static/media/MyArt.b23111f612b53af969f1.jpg",
     "static/media/Project5.png": "/portfolio/static/media/Project5.7304f0107f20a2a1a61a.png",
     "static/media/Header.png": "/portfolio/static/media/Header.e1ab5202912434b164d4.png",
+    "static/media/Project4.png": "/portfolio/static/media/Project4.0eac547507d423613a53.png",
     "static/media/Project3.png": "/portfolio/static/media/Project3.330a1d985bc3406dac0e.png",
     "static/media/react.png": "/portfolio/static/media/react.8a6fc0a24a800d1e0f4a.png",
     "static/media/proximanova_regular.ttf": "/portfolio/static/media/proximanova_regular.8181ca4b7c2d1189d78a.ttf",
@@ -12,15 +13,14 @@
     "static/media/node-js.png": "/portfolio/static/media/node-js.d6153fa85318a68d9bca.png",
     "static/media/Project1.jpg": "/portfolio/static/media/Project1.e9cad601a39b752634cd.jpg",
     "static/media/Project6.png": "/portfolio/static/media/Project6.372467defbaa30dfd0f4.png",
-    "static/media/Project4.png": "/portfolio/static/media/Project4.f787ac8911f45c71e0ad.png",
     "static/media/css.png": "/portfolio/static/media/css.463e319bad8e0edf1ef7.png",
     "static/media/ts.png": "/portfolio/static/media/ts.af108db04a54d784da9b.png",
     "index.html": "/portfolio/index.html",
     "main.fc106d53.css.map": "/portfolio/static/css/main.fc106d53.css.map",
-    "main.c585fce2.js.map": "/portfolio/static/js/main.c585fce2.js.map"
+    "main.6a803300.js.map": "/portfolio/static/js/main.6a803300.js.map"
   },
   "entrypoints": [
     "static/css/main.fc106d53.css",
-    "static/js/main.c585fce2.js"
+    "static/js/main.6a803300.js"
   ]
 }

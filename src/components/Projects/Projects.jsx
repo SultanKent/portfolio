@@ -8,6 +8,7 @@ import Project5 from '../../assets/Project5.png'
 import Project6 from '../../assets/Project6.png'
 import Github from '../../assets/github.png'
 import Link_icon from '../../assets/link-icon.png'
+import { motion } from 'framer-motion';
 
 const Projects = () => {
   const [showProjects, setShowProjects] = useState(false)
@@ -17,12 +18,38 @@ const Projects = () => {
         showButton.current.style.display = "none"
     }
   }, [showProjects])
+  const Animation1 = {
+    hidden: {
+        x: -100,
+        opacity: 0,
+    },
+    visible: {
+        x: 0,
+        opacity: 1,
+        transition: { duration: 0.5 },
+    },
+  }
+  const Animation2 = {
+    hidden: {
+        x: 100,
+        opacity: 0,
+    },
+    visible: {
+        x: 0,
+        opacity: 1,
+        transition: { duration: 0.5 },
+    },
+  }
   return (
-    <div className="Projects" id='Projects'>
+    <motion.div
+    initial="hidden"
+    whileInView="visible"
+    viewport={{ amount: 0.2 }}
+    className="Projects" id='Projects'>
         <div className="Projects_main">
         <h1>Each Project is a unique piece of development</h1>
             <div className="Project1">
-                <div className="Project1_main">
+                <motion.div variants={Animation1} className="Project1_main">
                 <p>PlaynChill</p>
                 <h2>Games<br/><span> Ecommerce website</span></h2>
                 <p>that website is for people who is going to buy online game with discount but don't know where to buy</p>
@@ -35,17 +62,17 @@ const Projects = () => {
                 ><img src={Github} alt="Github_logo" /></a></button>
                 <button className='source_code'>Live Demo <a href='https://sultankent.github.io/ecommerce/' target="_blank"><img src={Link_icon} alt="Link_icon" /></a></button>
                 </div>
-                </div>
-                <div className="Project1_img">
+                </motion.div>
+                <motion.div variants={Animation2} className="Project1_img">
                     <img src={Project1} alt="Project1" />
-                </div>
+                </motion.div>
             </div>
 
             <div className="Project1">
-                <div className="Project1_img">
+                <motion.div variants={Animation1} className="Project1_img">
                     <img src={Project2} alt="Project2" />
-                </div>
-                <div className="Project1_main">
+                </motion.div>
+                <motion.div variants={Animation2} className="Project1_main">
                 <p>Books</p>
                 <h2>Library<br/><span>Books App</span></h2>
                 <p>if you don't know where can i find good books, you should try this website</p>
@@ -59,11 +86,11 @@ const Projects = () => {
                 <button className='source_code'>Live Demo <a href='https://sultankent.github.io/books-app/' target="_blank"
                 ><img src={Link_icon} alt="Link_icon" /></a></button>
                 </div>
-                </div>
+                </motion.div>
             </div>
 
             <div className="Project1">
-                <div className="Project1_main">
+                <motion.div variants={Animation1} className="Project1_main">
                 <p>Player</p>
                 <h2>Spotify 2.0<br/><span> Music Player</span></h2>
                 <p>website is about listening to the music from spotify, if you have spotify account you should visit this website</p>
@@ -76,20 +103,20 @@ const Projects = () => {
                 ><img src={Github} alt="Github_logo" /></a></button>
                 <button className='source_code'>Live Demo <a href='https://sultankent.github.io/music-player/' target="_blank"><img src={Link_icon} alt="Link_icon" /></a></button>
                 </div>
-                </div>
-                <div className="Project1_img">
+                </motion.div>
+                <motion.div variants={Animation2} className="Project1_img">
                     <img src={Project3} alt="Project3" />
-                </div>
+                </motion.div>
             </div>
 
             {showProjects && (
                 <>
             
             <div className="Project1">
-                <div className="Project1_img">
+                <div variants={Animation1} className="Project1_img">
                     <img src={Project4} alt="Project4" />
                 </div>
-                <div className="Project1_main">
+                <div variants={Animation2} className="Project1_main">
                 <p>Coffee page</p>
                 <h2>Coffee house<br/><span> with json</span></h2>
                 <p>the page where you can buy everything fot your coffee and enjoy</p>
@@ -154,7 +181,7 @@ const Projects = () => {
             <p className='Github'>More in my <a href='https://github.com/SultanKent'
             target="_blank">Github</a></p>
         </div>
-    </div>
+    </motion.div>
   )
 }
 
