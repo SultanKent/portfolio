@@ -48,13 +48,13 @@ const Footer = () => {
                         </a>
                     ))}
                 </div>
-                <button className='Download' onClick={handleDownloadClick}>Download CV</button>
+                <button className='btn Download' onClick={handleDownloadClick}>Download CV</button>
             </div>
             <div className="Footer_main2">
                 <input type="text" placeholder='Your Name'/>
                 <input type="email" placeholder='Your Email'/>
                 <textarea type="text" placeholder='Your Message'/>
-                <button className='Submit'>Submit</button>
+                <button className='btn Submit'>Submit</button>
             </div>
         </div>
         <div className="Footer_down">
