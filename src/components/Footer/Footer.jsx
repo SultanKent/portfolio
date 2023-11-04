@@ -1,5 +1,7 @@
 import React from 'react'
 import './Footer.css'
+import Button from '../../ui/button/Button'
+import MyInput from '../../ui/input/MyInput'
 import telegram from '../../assets/telegram.png'
 import instagram from '../../assets/instagram.png'
 import In from '../../assets/in.png'
@@ -48,13 +50,14 @@ const Footer = () => {
                         </a>
                     ))}
                 </div>
-                <button className='btn Download' onClick={handleDownloadClick}>Download CV</button>
+                <Button buttonText="Download CV" onClick={handleDownloadClick}/>
             </div>
             <div className="Footer_main2">
-                <input type="text" placeholder='Your Name'/>
+                {/* <input type="text" placeholder='Your Name'/>
                 <input type="email" placeholder='Your Email'/>
-                <textarea type="text" placeholder='Your Message'/>
-                <button className='btn Submit'>Submit</button>
+                <textarea type="text" placeholder='Your Message'/> */}
+                <MyInput />
+                <Button buttonText="Submit"/>
             </div>
         </div>
         <div className="Footer_down">

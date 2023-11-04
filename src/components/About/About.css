@@ -3,131 +3,14 @@
 }
 
 .About_main {
-    display: flex;
+    /* display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-}
-
-.About_words>h1 {
-    margin-bottom: 20px;
-    color: #5C0E62;
-}
-
-.About_words>p {
-    color: #857885;
-    width: 400px;
-    margin-bottom: 20px;
-}
-
-.About_words2 {
-    display: flex;
-    gap: 20px;
-}
-
-.About_words2>span {
-    width: 90px;
-    height: 80px;
-    border: 1px solid gray;
-    border-right-width: 0px;
-    border-left-width: 0px;
-    border-radius: 10px;
-    padding: 10px;
-}
-
-.About_words2>span>h4 {
-    color: black;
-    margin-bottom: 5px;
-}
-
-.About_words2>span>p {
-    color: #756F6F;
-    text-align: center;
-    font-size: 14px;
-}
-
-.About_img {
-    position: relative;
-}
-
-.About_img::before {
-    content: "";
-    width: 500px;
-    height: 480px;
-    position: absolute;
-    border-radius: 50px;
-    background: #857885;
-    bottom: 90px;
-    z-index: -1;
-    left: 70px;
-}
-
-.MyArt {
-    width: 500px;
-    height: 480px;
-    border-radius: 50px;
+    align-items: center; */
 }
 
 @media only screen and (max-width: 1250px) {
-    .About {
-        padding: 120px 50px 60px;
-    }
-    .MyArt {
-        width: 300px;
-        height: 280px;
-    }
-    .About_img::before {
-        width: 300px;
-        height: 280px;
-        left: 40px;
-        bottom: 70px;
-    }
-}
-
-@media only screen and (max-width: 960px) {
-    .About_words>p {
-        width: 300px;
-    }
-}
-
-@media only screen and (max-width: 760px) {
-    .About_main {
-        flex-direction: column;
-        gap: 120px;
-    }
-    .About_img::before {
-        width: 400px;
-        height: 380px;
-    }
-    .MyArt {
-        width: 400px;
-        height: 380px;
-    }
-    .About_words>p {
-        width: 400px;
-    }
-}
-
-@media only screen and (max-width: 560px) {
-    .About_img::before {
-        width: 300px;
-        height: 280px;
-    }
-    .MyArt {
-        width: 300px;
-        height: 280px;
-    }
-    .About_words>p {
-        width: 300px;
-    }
-}
-
-@media only screen and (max-width: 420px) {
-    .About_img::before {
-        width: 200px;
-        height: 180px;
-    }
-    .MyArt {
-        width: 200px;
-        height: 180px;
-    }
+  .About {
+      padding: 60px 50px;
+  }
 }

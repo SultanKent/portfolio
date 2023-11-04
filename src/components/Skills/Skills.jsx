@@ -7,11 +7,17 @@ import ts from '../../assets/ts.png'
 import react from '../../assets/react.png'
 import tailwind from '../../assets/tailwind.png'
 import node from '../../assets/node-js.png'
+import vue from '../../assets/vue.png'
+import nextjs from '../../assets/nextjs.png'
 import arrow from '../../assets/arrow-icon.png'
 import font from '../../assets/Font.png'
 import laptop from '../../assets/laptop.png'
 import optimization from '../../assets/optimization.png'
 import { motion } from 'framer-motion';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Pagination, Autoplay } from 'swiper/modules';
 
 const Skills = () => {
   const my_skills = [
@@ -20,7 +26,7 @@ const Skills = () => {
   {id: 3, icon: laptop, name: 'Web Applications', about: 'Creating dynamic and intuitive web experiences'},
   {id: 4, icon: optimization, name: 'Performance Optimization', about: 'techniques to optimize web application performance'},
   ]
-  const my_skills2 = [css, js, ts, react, tailwind, node]
+  const my_skills2 = [css, js, ts, react, tailwind, node, vue, nextjs]
   const Animation_skills = {
     hidden: {
         x: -100,
@@ -80,9 +86,49 @@ const Skills = () => {
         </div>
         <div className="Skills_main2">
         <h4>Tech Stack</h4>
-            {my_skills2.map((item, id) => (
-                <img src={item} alt="" key={id} className='item_icon2'/>
-            ))}
+        <Swiper
+          spaceBetween={30}
+          slidesPerView={5}
+          loop={true}
+          speed={2000}
+          autoplay={{
+            delay: 0,
+            disableOnInteraction: false
+          }}
+          modules={[Pagination, Autoplay]}
+          breakpoints={{
+            1900: {
+              slidesPerView: 5,
+              spaceBetween: 20,
+            },
+            1440: {
+              slidesPerView: 5,
+              spaceBetween: 20,
+            },
+            1080: {
+              slidesPerView: 5,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 4,
+            },
+            480: {
+              slidesPerView: 3,
+            },
+            420: {
+              slidesPerView: 2,
+            },
+            0: {
+              slidesPerView: 1,
+            },
+          }}
+        >
+          {my_skills2.map((item, id) => (
+            <SwiperSlide key={id}>
+              <img src={item} alt="" className='item_icon2'/>
+            </SwiperSlide>
+          ))}
+        </Swiper>
         </div>
     </motion.div>
   )

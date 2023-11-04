@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Menu from '../Menu/Menu';
 import './Header.css';
+import Button from '../../ui/button/Button';
 
 const Header = () => {
   const linkedinUrl = 'https://kz.linkedin.com/in/sultan-kuanishev-864373282';
@@ -49,13 +50,11 @@ const Header = () => {
       <div className="Header_main">
         <Menu />
         <div className="Header_title">
-          <h1>Kuanishev Sultan<br />I am a <span>{text}</span></h1>
+          <h1>Akero Sultan<br />I am a <span>{text}</span></h1>
           <p>Hi, I'm Sultan. A passionate Full Stack Developer based in Kazakhstan</p>
-          <button className='btn header_btn'>
           <a href={linkedinUrl} target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none'}}>
-            Connect me
+          <Button buttonText="Connect me"/>
           </a>
-          </button>
         </div>
       </div>
     </div>

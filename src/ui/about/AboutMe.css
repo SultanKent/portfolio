@@ -1,0 +1,28 @@
+.about-me {
+  font-family: 'Courier New', monospace;
+  background-color: #2d2d2d;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 4px;
+  overflow: auto;
+}
+
+.line {
+  margin: 0;
+}
+
+.code {
+  font-size: 16px;
+}
+
+.keyword {
+  color: #569cd6; /* Blue for keywords */
+}
+
+.comment {
+  color: #6a9955; /* Green for comments */
+}
+
+.string {
+  color: #ce9178; /* Red for strings */
+}

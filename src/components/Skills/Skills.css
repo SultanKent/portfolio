@@ -82,7 +82,6 @@
 .arrow {
     width: 25px;
     height: 25px;
-    background: #5C0E62;
 }
 
 .Skills_main2 {
@@ -112,7 +111,7 @@
     height: 34px;
 }
 
-@media only screen and (max-width: 1250px) {
+@media only screen and (max-width: 1350px) {
     .Skills {
         padding: 120px 50px;
     }
@@ -132,7 +131,7 @@
     }
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 1060px) {
     .my-skills1 {
         width: 170px;
         padding: 8px 20px;
@@ -148,11 +147,6 @@
     }
     .About_skills>p:nth-child(3) {
         width: 230px;
-    }
-    .Skills_main2 {
-        display: grid;
-        gap: 50px;
-        grid-template-columns: repeat(4, 2fr);
     }
 }
 

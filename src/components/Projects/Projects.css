@@ -15,6 +15,7 @@
 
 .category-buttons {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
     margin-top: 20px;
@@ -69,9 +70,13 @@
 
 .tech>span {
     font-weight: 700;
-    width: 50px;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: fit-content;
     height: 20px;
-    box-shadow: 7px 10px 50px 0px #E8E2F0;
+    box-shadow: 5px 1px 25px 0px #e8e2f0;
 }
 
 .Project1_main>h2>span {
@@ -89,11 +94,16 @@
     gap: 5px;
     border: none;
     cursor: pointer;
+    background: transparent;
 }
 
 .source_code>a>img {
     width: 24px;
     height: 24px;
+}
+
+.Project1_img {
+    overflow: hidden;
 }
 
 .Project1_img>img {
@@ -103,8 +113,9 @@
     transition: transform 0.3s;
 }
 
+
 .Project1_img>img:hover {
-    transform: scale(1.1);
+    transform: scale(1.1) rotate(5deg);
 }
 
 .show-projects {

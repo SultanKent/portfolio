@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Projects.css';
 import { motion } from 'framer-motion';
+import Button from '../../ui/button/Button';
 import Github from '../../assets/github.png';
 import Link_icon from '../../assets/link-icon.png';
 import Project1 from '../../assets/Project1.jpg';
@@ -148,9 +149,9 @@ const Projects = () => {
       <div className="Projects_main">
         <h1>Each Project is a unique piece of development</h1>
         <div className="category-buttons">
-          <button className='btn' onClick={() => setSelectedCategory('Vue.js')}>Vue.js</button>
-          <button className='btn' onClick={() => setSelectedCategory('React.js')}>React.js</button>
-          <button className='btn' onClick={() => setSelectedCategory('JavaScript')}>JavaScript</button>
+          <Button onClick={() => setSelectedCategory('Vue.js')} buttonText="Vue.js"/>
+          <Button onClick={() => setSelectedCategory('React.js')} buttonText="React.js"/>
+          <Button onClick={() => setSelectedCategory('JavaScript')} buttonText="JavaScript"/>
         </div>
         <div className="projects-container">
           {filteredProjects.map((project, index) => (

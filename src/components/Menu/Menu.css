@@ -1,120 +1,134 @@
-  Menu {
-    width: 100%;
-  }
+.Menu {
+  width: 100%;
+  position: relative;
+  z-index: 9;
+}
 
+.Menu_main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  transition: top 0.3s ease-in-out;
+  width: 80%;
+  padding: 33px 0px;
+}
+
+.Menu_main.show {
+  top: 0;
+}
+
+.Menu_main.hide {
+  top: -100%;
+}
+
+.navbar {
+  display: flex;
+  gap: 41px;
+  cursor: pointer;
+}
+
+.navbar>li:hover {
+  color: #5C0E62;
+  transition: color 0.3s ease;
+}
+
+.burger-menu {
+  position: relative;
+  width: 50px;
+}
+
+.burger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  z-index: 10;
+}
+
+.bar {
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+  transition: transform 0.2s ease-in-out;
+}
+
+.open .bar:nth-child(1) {
+  transform: translateY(8px) rotate(-45deg);
+}
+
+.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.open .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(45deg);
+}
+
+.menu-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  left: 0;
+  width: 100%;
+  background: #14121c;
+  display: flex;
+  flex-direction: column;
+  z-index: 9;
+  transform-origin: top;
+  transform: scaleY(0);
+  transition: transform 0.2s ease-in-out;
+}
+.open .menu-items {
+  transform: scaleY(1);
+}  
+
+.Menu-content {
+  top: 45%;
+  position: relative;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  padding: 20px;
+  border-radius: 5px;
+  left: 60%;
+ }
+
+@media only screen and (max-width: 760px) {
   .Menu_main {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+      align-items: unset;
   }
-
-  .navbar {
-    display: flex;
-    gap: 41px;
-    cursor: pointer;
+  .Menu_main>h1 {
+      font-size: 28px;
   }
-
-  .navbar>li:hover {
+  .my-social-messengers {
+      display: flex;
+      position: absolute;
+      gap: 40px;
+      bottom: 20px;
+      width: 100%;
+      left: 80px;
+  }
+  .my-social-messengers>a>img {
+      width: 34px;
+      height: 34px;
+  }
+  .navbar2 {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+  }
+  .navbar2 li {
+      font-size: 24px;
+  }
+  .navbar2 li:hover {
     color: #5C0E62;
     transition: color 0.3s ease;
   }
-
-  .burger-menu {
-    position: relative;
-    width: 50px;
-  }
-  
-  .burger-icon {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    cursor: pointer;
-    position: fixed;
-    width: 30px;
-    height: 30px;
-    padding: 5px;
-    z-index: 10;
-  }
-  
-  .bar {
-    width: 100%;
-    height: 3px;
-    background-color: #000;
-    transition: transform 0.2s ease-in-out;
-  }
-  
-  .open .bar:nth-child(1) {
-    transform: translateY(8px) rotate(-45deg);
-  }
-  
-  .open .bar:nth-child(2) {
-    opacity: 0;
-  }
-  
-  .open .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(45deg);
-  }
-  
-  .menu-items {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    top: 0;
-    height: 100%;
-    left: 0;
-    width: 100%;
-    background: linear-gradient(109deg, #5C0E62 20.83%, #00B5D0 100%);
-    display: flex;
-    flex-direction: column;
-    z-index: 9;
-    transform-origin: top;
-    transform: scaleY(0);
-    transition: transform 0.2s ease-in-out;
-  }
-  .open .menu-items {
-    transform: scaleY(1);
-  }  
-  
-  .Menu-content {
-    top: 45%;
-    position: relative;
-    transform: translate(-50%, -50%);
-    background: transparent;
-    padding: 20px;
-    border-radius: 5px;
-    left: 60%;
-   }
-
-@media only screen and (max-width: 760px) {
-    .Menu_main {
-        align-items: unset;
-    }
-    .Menu_main>h1 {
-        font-size: 28px;
-    }
-    .my-social-messengers {
-        display: flex;
-        position: absolute;
-        gap: 40px;
-        bottom: 20px;
-        width: 100%;
-        left: 80px;
-    }
-    .my-social-messengers>a>img {
-        width: 34px;
-        height: 34px;
-    }
-    .navbar2 {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-    .navbar2 li {
-        font-size: 24px;
-    }
-    .navbar2 li:hover {
-      color: #5C0E62;
-      transition: color 0.3s ease;
-    }
-} 
+}

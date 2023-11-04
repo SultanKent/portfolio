@@ -8,43 +8,59 @@ import github from '../../assets/github.png';
 
 const Menu = () => {
   const social_messengers = [
-        {
-          id: 1,
-          imageSrc: telegram,
-          link: 'https://t.me/sleepcc'
-        },
-        {
-          id: 2,
-          imageSrc: instagram,
-          link: 'https://www.instagram.com/kiritoff75/'
-        },
-        {
-          id: 3,
-          imageSrc: In,
-          link: 'https://kz.linkedin.com/in/sultan-kuanishev-864373282'
-        },
-        {
-          id: 4,
-          imageSrc: github,
-          link: 'https://github.com/SultanKent'
-        },
-      ];
+    {
+      id: 1,
+      imageSrc: telegram,
+      link: 'https://t.me/sleepcc',
+    },
+    {
+      id: 2,
+      imageSrc: instagram,
+      link: 'https://www.instagram.com/kiritoff75/',
+    },
+    {
+      id: 3,
+      imageSrc: In,
+      link: 'https://kz.linkedin.com/in/sultan-kuanishev-864373282',
+    },
+    {
+      id: 4,
+      imageSrc: github,
+      link: 'https://github.com/SultanKent',
+    },
+  ];
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrollingUp, setIsScrollingUp] = useState(true); // Initially, show the menu
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
   };
+
   useEffect(() => {
-        const body = document.querySelector('body');
-        if (isOpen) {
-          body.style.overflow = 'hidden';
-        } else {
-          body.style.overflow = 'auto';
-        }
-      }, [isOpen]);
+    const body = document.querySelector('body');
+    if (isOpen) {
+      body.style.overflow = 'hidden';
+    } else {
+      body.style.overflow = 'auto';
+    }
+  }, [isOpen]);
+
+  const [lastScrollTop, setLastScrollTop] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const st = window.pageYOffset || document.documentElement.scrollTop;
+      setIsScrollingUp(st <= lastScrollTop);
+      setLastScrollTop(st <= 0 ? 0 : st);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [lastScrollTop]);
+
   return (
-    <div className='Menu'>
-      <div className="Menu_main">
+    <div className="Menu">
+      <div className={`Menu_main ${isScrollingUp ? 'show' : 'hide'}`}>
         <h1>Frontend</h1>
         {window.innerWidth > 760 ? (
           <nav className="navbar">
@@ -70,48 +86,47 @@ const Menu = () => {
             </li>
           </nav>
         ) : (
-
-        <div className={`burger-menu ${isOpen ? 'open' : ''}`}>
-      <div className="burger-icon" onClick={handleToggle}>
-        <div className="bar"></div>
-        <div className="bar"></div>
-        <div className="bar"></div>
-      </div>
-      <div className="menu-items">
-        <ul className='Menu-content'>
-        <nav className="navbar2">
-             <li>
-               <Link to="About" smooth={true} duration={500} onClick={handleToggle}>
-                 About
-               </Link>
-             </li>
-             <li>
-               <Link to="Skills" smooth={true} duration={500} onClick={handleToggle}>
-                 Skills
-               </Link>
-             </li>
-             <li>
-               <Link to="Projects" smooth={true} duration={500} onClick={handleToggle}>
-                 Projects
-               </Link>
-             </li>
-             <li>
-               <Link to="Footer" smooth={true} duration={500} onClick={handleToggle}>
-                 Contacts
-               </Link>
-             </li>
-           </nav>
-        </ul>
-        <div className="my-social-messengers">
+          <div className={`burger-menu ${isOpen ? 'open' : ''}`}>
+            <div className="burger-icon" onClick={handleToggle}>
+              <div className="bar"></div>
+              <div className="bar"></div>
+              <div className="bar"></div>
+            </div>
+            <div className="menu-items">
+              <ul className="Menu-content">
+                <nav className="navbar2">
+                  <li>
+                    <Link to="About" smooth={true} duration={500} onClick={handleToggle}>
+                      About
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="Skills" smooth={true} duration={500} onClick={handleToggle}>
+                      Skills
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="Projects" smooth={true} duration={500} onClick={handleToggle}>
+                      Projects
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="Footer" smooth={true} duration={500} onClick={handleToggle}>
+                      Contacts
+                    </Link>
+                  </li>
+                </nav>
+              </ul>
+              <div className="my-social-messengers">
                 {social_messengers.map((item) => (
                   <a href={item.link} key={item.id} target="_blank" rel="noopener noreferrer">
-                    <img src={item.imageSrc} alt="item.imageSrc" />
+                    <img src={item.imageSrc} alt={item.imageSrc} /> {/* Use {} for variable interpolation */}
                   </a>
                 ))}
-        </div>
-      </div>
-    </div>
-    )}
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

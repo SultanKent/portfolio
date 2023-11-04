@@ -62,15 +62,6 @@
     outline: none;
 }
 
-.Submit {
-    width: 120px;
-    background: #FFBC51;
-    height: 50px;
-    border: none;
-    cursor: pointer;
-    border-radius: 10px;
-}
-
 .Footer_down {
     border: 1px solid black;
     border-bottom-width: 0px;
