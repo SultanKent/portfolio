@@ -34,7 +34,7 @@ input:focus ~ label, input:valid ~ label    {
 }
 
 /* BOTTOM BARS ================================= */
-.bar_input  { position:relative; display:block; width:300px; }
+.bar_input  { position:relative; display:block; width:100%; }
 .bar_input:before, .bar_input:after   {
   content:'';
   height:2px; 
@@ -60,7 +60,7 @@ input:focus ~ .bar_input:before, input:focus ~ .bar_input:after {
 .highlight {
   position:absolute;
   height:60%; 
-  width:100px; 
+  width: 300px; 
   top:25%; 
   left:0;
   pointer-events:none;

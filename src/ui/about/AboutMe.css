@@ -26,3 +26,9 @@
 .string {
   color: #ce9178; /* Red for strings */
 }
+
+@media only screen and (max-width: 1250px) {
+  .code {
+    font-size: 14px;
+  }
+}
