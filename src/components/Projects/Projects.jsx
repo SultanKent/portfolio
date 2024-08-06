@@ -16,6 +16,7 @@ import Project9 from '../../assets/Project9.png';
 import Project10 from '../../assets/Project10.png';
 import Project11 from '../../assets/Project11.png';
 import Project12 from '../../assets/Project12.png';
+import Project13 from '../../assets/Project13.png';
 
 const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState('');
@@ -139,6 +140,16 @@ const Projects = () => {
       github: 'https://github.com/SultanKent/Game_quiz',
       demo: 'https://sultankent.github.io/Game_quiz/',
       image: Project12,
+    },
+    {
+      id: 13,
+      title: 'Потолочкин',
+      category: 'JavaScript',
+      description: "one of the main best projects that was made in js",
+      technology: 'JavaScript',
+      github: 'https://github.com/SultanKent/potolochkin',
+      demo: 'https://sultankent.github.io/potolochkin/',
+      image: Project13,
     },
   ];
 
